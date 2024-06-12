@@ -4,7 +4,7 @@ import goblin from '../img/goblin.png';
 export default class Game {
  constructor(str, index) {
   this.element = document.querySelector(str);
-  this.boardSize = index ** 2;
+  this.boardSize = index * 2;
   if (this.element === null) throw new Error('Field not found');
   this.sucessConuter = 0;
   this.failCounter = 0;
